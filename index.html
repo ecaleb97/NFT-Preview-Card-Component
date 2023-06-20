@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <div class="image-container">
+        <img id="nft" src="./images/image-equilibrium.jpg" alt="image-equilibrium">
+        <div class="overlay"></div>
+        <img id="icon-view" src="./images/icon-view.svg" alt="icon-view">
+      </div>
+      <div class="title">
+        <h1>Equilibrium #3429</h1>
+      </div>
+      <section class="description">
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </section>
+      <section class="price-time">
+        <div id="price">
+          <img src="./images/icon-ethereum.svg" alt="icon-ethereum">
+          <label for="">0.041 ETH</label>
+        </div>
+        <div class="time">
+          <img src="./images/icon-clock.svg" alt="icon-clock">
+          <label for="">3 days left</label>
+        </div>
+      </section>
+      <hr>
+      <div class="creator">
+        <img src="./images/image-avatar.png" alt="image-avatar">
+        <label for="" id="creation">Creation of <span id="name-creator">Jules Wyvern</span></label>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

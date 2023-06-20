@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+}
+
+.card {
+    background: hsl(216, 50%, 16%);
+    width: 250px;
+    height: 410px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.image-container {
+    width: 220px;
+    height: 210px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.image-container #nft {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+#icon-view {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.image-container:hover .overlay + #icon-view {
+    display: block;
+} 
+
+.title {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+.title h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background: aqua; */
+}
+
+.description p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+}
+
+.price-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#price {
+    /* background: green; */
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#price label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    /* background: green; */
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: hsl(215, 32%, 27%);
+    height: 2px;
+    border-style: none;
+}
+
+.creator {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+/* #image-creator {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+} */
+
+.creator img {
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+#creation {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+#name-creator {
+    padding-left: 2px;
+    color: hsl(0, 0%, 100%);
+}
+
+#name-creator:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+
+
+
